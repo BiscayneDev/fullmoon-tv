@@ -1,0 +1,26 @@
+{
+  "name": "fullmoon-tv",
+  "version": "0.1.0",
+  "description": "Full Moon TV — a live AI-generated television channel. Users pay per prompt via x402, clips chain narratively, rendered by Venice video through Shipyard Inference.",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node --import tsx src/server.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["ai", "video", "x402", "venice", "shipyard", "live", "tv"],
+  "author": "Halsey Huth",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.12.0",
+    "@hono/node-server": "^2.0.0",
+    "shipyard-inference": "file:../shipyard-inference"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20"
+  }
+}
