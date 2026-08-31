@@ -3,3 +3,4 @@ dist/
 clips/
 .env
 *.log
+.vercel
